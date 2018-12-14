@@ -1,4 +1,4 @@
-﻿.PCsCADProject C:\Users\Marcel\Desktop\Project.PRO V20.0 1 257 1301184680 '14-12-2018 16:05:22' 2 2500 500 2500 500 2000 Standard 1 "" "" 30 0
+﻿.PCsCADProject C:\Users\Marcel\Documents\GitHub\paczkomat\Project.PRO V20.0 1 257 1301185540 '14-12-2018 16:32:14' 2 2500 500 2500 500 2000 Standard 1 "" "" 30 0
 .Born 2 1 20.0 1301184661
 
 .xyz 0
@@ -7,8 +7,6 @@
 .AppData SignalRefPreText=/
 .AppData SymbolRefPreText=/
 .AppData CrossRefPreText=/
-.AppData [LineDataFields]
-.AppData '000={"Name":"RoutingClass","Expression":"","Visible":false,"DisplayOrder":0,"Items":["Power","Signal"]}'
 .AppData [LineGap]
 .AppData LineGapStatus=0
 .AppData [RefID]
@@ -18,6 +16,8 @@
 .AppData ApplicationType=Automation
 .AppData SavedInMainVersion=20.0
 .AppData SavedInBuildVersion=20.0.4.66
+.AppData [LineDataFields]
+.AppData '000={"Name":"RoutingClass","Expression":"","Visible":false,"DisplayOrder":0,"Items":["Power","Signal"]}'
 
 .Revision 0 0
 
@@ -130,8 +130,17 @@
 .PinLab "" 5000 12500 0 0 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 .end
 
+.PCsCADSymbol E:\PCSEL40\SYMBOL\MISC_2015\SGSIGNAL.SYM -2000 -2000 2000 2000 130 '11-12-2015 09:58:58' 10 V20.0
+.Title 'Signal symbol Reference symbol hidden in the line' 1033
+.Title 'Signalsymbol Henvisningssymbol, som er skjult i en streg' 1030
+.Name SIGNAL 1000 500 0 0 0 25 0 8 1800 0 0 0 0 0 0 0 0 0 0 0
+.SymbRef 0 3 "" 0 0 0
+.SignalRef "" -3250 500 0 0 0 25 0 2 0 0 0 0 0 0 0 0 0 0 0 0
+.con 17 0 0 0 0 0 0 "" 0 0 0
+.end
 
-.PageNo 1 1 '14-12-2018 16:05:12' 4 10000 1 0 300 1 0 16 0 0 0 210000 148500 0 A3|ISOA 420000 297000 -25000 -10000 -10000 -10000 0 -1
+
+.PageNo 1 1 '14-12-2018 16:32:08' 4 10000 1 0 300 1 0 16 0 0 0 210000 148500 0 A3|ISOA 420000 297000 -25000 -10000 -10000 -10000 0 -1
 .Born 2 1 20.0 1301184661
 
 
@@ -140,8 +149,18 @@
 .Refdata 1 1 70000 267500 10000 47500 7 0 1 A 40000 40000 8 6 57500 30000
 
 
+.polyline 128 0 0 0 1 0 0 250 0 0 0 0 0 0 0 0 20
+.Point 1048576 147500 170000 0 1
+.Point 0 147500 192500 0 0
+.Point 0 207500 192500 0 0
+.Point 0 207500 112500 0 0
+.Point 0 90000 112500 0 0
+.Point 0 90000 190000 0 0
+.Point 0 172500 190000 0 0
+.Point 0 172500 192500 0 2
+.end
 
-.com E:\PCSEL40\SYMBOL\60617_2015\06-08-01.SYM 0 147500 157500 0 0 1 0 0 1 0 1 0 0 0 0 0 0 0 0 -1 0
+.com E:\PCSEL40\SYMBOL\60617_2015\06-08-01.SYM 0 147500 157500 0 0 1 250 0 1 0 1 0 0 0 0 0 0 0 0 -1 0
 .Name -M 138250 161425 0 0 0 25 0 6 1800 0 0 0 0 0 0 0 0 0 0 0
 .Typ "" 138250 152425 0 0 0 25 0 8 0 0 0 0 0 0 0 0 0 0 0 0
 .Art "" 138250 149175 0 0 0 25 0 8 0 0 0 0 0 0 0 0 0 0 0 0
@@ -150,7 +169,7 @@
 .PinName 1 141750 168250 0 0 0 25 0 0 900 128 0 0 0 0 0 0 0 0 0 0
 .PinFunc "" 142500 170000 0 0 0 25 0 0 0 16 0 0 0 0 0 0 0 0 0 0
 .PinLab "" 142500 170000 0 0 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-.con 1 147500 170000 0 0 0 0 "" 0 0 0
+.con 1 147500 170000 0 0 1 0 "" 0 0 0
 .PinName 2 146750 168250 0 0 0 25 0 0 900 128 0 0 0 0 0 0 0 0 0 0
 .PinFunc "" 147500 170000 0 0 0 25 0 0 0 16 0 0 0 0 0 0 0 0 0 0
 .PinLab "" 147500 170000 0 0 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -160,6 +179,17 @@
 .PinLab "" 152500 170000 0 0 0 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 .AppData [Component]
 .AppData ComponentID=0
+.end
+
+.com E:\PCSEL40\SYMBOL\MISC_2015\SGSIGNAL.SYM 128 172500 192500 0 900 1 0 10 1 0 1 0 0 0 0 0 0 0 0 -1 0
+.Name L1 172000 191500 0 0 0 25 0 6 2700 0 0 0 0 0 0 0 0 0 0 0
+.SymbRef 0 3 "" 0 0 0
+.SignalRef "" 172000 195750 0 0 0 25 0 0 900 16 0 0 0 0 0 0 0 0 0 0
+.con 17 172500 192500 0 0 2 0 "" 0 0 0
+.PinName "" 171500 192500 0 0 0 25 0 2 900 0 0 0 0 0 0 0 0 0 0 0
+.PinFunc "" 175250 192500 0 0 0 25 0 2 900 0 0 0 0 0 0 0 0 0 0 0
+.PinLab "" 172500 192500 0 0 0 25 0 2 900 0 0 2 0 0 0 0 0 0 0 0
+.PinDes "" 172500 192500 0 0 0 25 0 2 900 0 0 0 0 0 0 0 0 0 0 0
 .end
 
 
