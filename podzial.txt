@@ -1,0 +1,12 @@
+Maja:
+	-zasilanie
+	-klawiatura
+
+Marcel:
+	-czujniki
+	-zamek magnetyczny
+
+Kamil:
+	-ekran
+	-PLC
+
